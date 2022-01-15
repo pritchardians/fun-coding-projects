@@ -1,1 +1,1 @@
-# fun-coding-projects
+# Fun Coding Projects!
