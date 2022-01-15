@@ -11,19 +11,24 @@ While this is all in good fun, I will try to keep the code built and organized
 in a professional way. Being a recovering engineer and scrum-master, it would
 be embarrassing otherwise :)
 
+## Running the app to create html pages
+**Make sure your are in the project root directory in your terminal**</br>
+I assume you have Python installedi </br>
+```python app.py```
+
 ## Git branching strategy
 - The ```main``` branch is always bug-free and deployable</br>
 - Most development happens in the ```deploy``` branch</br>
 - Create branches from ```develop``` often. Branches are cheap and can be easily discarded</br>
     when you get yourself in trouble!</br>
 - Commit changes frequently</br>
-- As you create releasable units of code, employ [semantic versioning](https://semver.org/)</br>
+- As you create releasable units of code, employ [semantic versioning](https://semver.org/) via git tags</br>
 
 ## Python Virtual Environment
 For the Python code I use a virtual environment to isolate the installed packages,
 and allow for a clean upload to Heroku.</br>
 (I added the venv/ directory to .gitignore so you'll need to create your virtual environment
-afrwr cloning this project)</br>
+after cloning this project)</br>
 
 Create virtual environment (in the ./venv directory)</br>
 **Make sure your are in the project root directory in your terminal**</br>
