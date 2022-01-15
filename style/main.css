@@ -1,0 +1,22 @@
+/* Load Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400&display=swap");
+
+body {
+  font-family: "Titillium Web", serif;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(173, 255, 47),
+    rgb(0, 0, 255)
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+p {
+  text-align: center;
+  margin: 10px;
+  padding: 0;
+}
