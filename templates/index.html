@@ -1,12 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../static/style/main.css" />
-    <title>Fun Coding Projects</title>
-  </head>
-  <body>
-    <h1>Fun Coding Projects</h1>
-  </body>
-  <script src="src/main.js"></script>
-</html>
+{% extends 'base.html' %} {% block content %}
+<h1 class="topofpage">Fun Coding Projects</h1>
+<p>
+  I really enjoy building applications using website technology, and I hope you
+  will too! Are you interested in seeing how easy it is to build a site like
+  this? Read on!
+</p>
+<div class="button-bar">
+  <button class="submit submit-narrow">
+    <a href="#">About Me</a>
+    <a href="#">About This site</a>
+  </button>
+</div>
+<p>
+  I have been building front-ends in Javascript and back-ends in node for a
+  while now, and I was also enjoying learning Python.
+</p>
+<h2>Command Line Tools? No thanks!</h2>
+<p>
+  I like Python, but all the little programs I built were based on interacting
+  with users through the command line interface-which felt like stepping back a
+  few decades. Having used languages like Visual Basic I love beautiful
+  interfaces.
+</p>
+<p>
+  And then I learned about Flask! This brilliant tool allows Python to interact
+  with humans through web pages. I will still use Javascript to do the heavy
+  lifting in client-side code. But I can at least run the Python with friendly
+  web pages.
+</p>
+<p>If you like poking around, playing with the wee tools I built, have fun!</p>
+<p>
+  If you want to dive deeper and learn a little about how these systems were
+  built, I will walk you through
+</p>
+<div class="content-box">
+  <h2>The tools I use</h2>
+  <h4>HTML 5</h4>
+</div>
+
+{% endblock %}

@@ -11,6 +11,11 @@ def home():
     return render_template('index.html')
 
 
+# Page Not Found page
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html')
+
 '''
 Run the app from the command line.
 NOTE: I was having issues with caching and not seeing my latest code, so I open the html page on a random port

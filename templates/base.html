@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../static/style/main.css" />
+    <title>Fun Coding Projects</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-header">
+        <div class="nav-logo">
+          <a href="http://www.IanPritchard.com" target="_blank"
+            >Ian Pritchard</a
+          >
+        </div>
+      </div>
+
+      <!-- responsive navbar toggle button -->
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!-- Navbar items -->
+      <div class="nav-links">
+        <a href="{{url_for('home')}}">Home</a>
+      </div>
+    </div>
+
+    {% block content %} {% endblock %}
+    <p></p>
+    <div class="footer">
+      Built by
+      <a href="http://www.ianpritchard.com" target="_blank">Ian Pritchard.</a>
+    </div>
+    <script src="src/main.js"></script>
+  </body>
+</html>
