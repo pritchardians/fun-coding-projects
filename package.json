@@ -1,0 +1,23 @@
+{
+  "name": "fun-coding-projects",
+  "version": "1.0.0",
+  "description": "Fun coding projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass:static/style/compiled"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pritchardians/fun-coding-projects"
+  },
+  "author": "Ian Pritchard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pritchardians/fun-coding-projects/issues"
+  },
+  "homepage": "https://github.com/pritchardians/fun-coding-projects#readme",
+  "devDependencies": {
+    "sass": "^1.48.0"
+  }
+}
