@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../static/style/main.css" />
-    <title>Fun Coding Projects</title>
+    <title>Fun Coding Projects:{{page_title}}</title>
   </head>
   <body>
     <div class="navbar">
       <div class="nav-header">
         <div class="nav-logo">
-          <a href="http://www.IanPritchard.com" target="_blank"
+          <a href="https://www.IanPritchard.com" target="_blank"
             >Ian Pritchard</a
           >
         </div>
@@ -30,6 +30,8 @@
         <a href="{{url_for('home')}}">Home</a>
       </div>
     </div>
+
+    <h1 class="topofpage">{{page_title}}</h1>
 
     {% block content %} {% endblock %}
     <p></p>

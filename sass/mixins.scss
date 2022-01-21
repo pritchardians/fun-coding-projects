@@ -1,0 +1,13 @@
+/* Mixins loaded */
+
+// This mixin uses a defaulted variable for direction
+// Acceptable values are, for example-
+//  bottom right
+//  top left
+@mixin gradient($direction: bottom right) {
+  background-image: linear-gradient(
+    to $direction,
+    $gradient-colour-1,
+    $gradient-colour-2
+  );
+}

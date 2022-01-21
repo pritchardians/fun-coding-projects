@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch sass:static/style/compiled"
+    "sass": "node-sass -o static/style sass/main.scss"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/pritchardians/fun-coding-projects#readme",
   "devDependencies": {
+    "node-sass": "^7.0.1",
     "sass": "^1.48.0"
   }
 }

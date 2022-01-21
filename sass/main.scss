@@ -1,3 +1,21 @@
-body {
-  font-size: large;
-}
+/* This CSS was generated from sass
+  git: https://github.com/pritchardians/fun-coding-projects
+
+  Author: Ian Pritchard
+
+  website: http://www.ianpritchard.com
+*/
+
+// Recommendation: his main sass file should ONLY contain site imported files
+
+//Global variables
+@import "globals";
+//Mixins
+@import "mixins";
+// Colour palette
+@import "palette";
+// Site styling
+@import "sitewide";
+
+/* Components */
+@import "components/navbar";

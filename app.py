@@ -8,13 +8,13 @@ app = Flask(__name__)
 # Create the index page
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index.html', page_title='Fun Coding Projects')
 
 
 # Page Not Found page
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('404.html')
+    return render_template('404.html', page_title='Page Not Found')
 
 '''
 Run the app from the command line.

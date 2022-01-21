@@ -34,10 +34,9 @@ I assume you have Python installed </br>
 <a id="compile-sass">
 
 ### Compile sass into css
-```npm run sass``` compiles [main.scss](./sass/main.scss) into [main.css](./static/style/compiled.css/main.css)</br>
-**NOTE**: The npm script is a watch script, so the sass will recompile when you save changes</br>
+```npm run sass``` compiles [main.scss](./sass/main.scss) into [main.css](./static/style/main.css)</br>
 *Recommendation*: [main.scss](./sass/main.scss) should only contain imports of other sass files.
-This way you can split the sass into nicely organized sections.
+This way you can split the sass into nicely organized components.
 
 ## Git branching strategy
 - The ```main``` branch is always bug-free and deployable</br>
