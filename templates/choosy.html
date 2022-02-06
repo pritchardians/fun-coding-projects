@@ -1,0 +1,78 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="wrapper">
+  <div class="tabs">
+    <div class="tab">
+      <input
+        type="radio"
+        name="css-tabs"
+        id="tab-1"
+        checked
+        class="tab-switch"
+      />
+      <label for="tab-1" class="tab-label">Fully Functional</label>
+      <div class="tab-content">
+        <div class="content-box">
+          <h3>Choice List</h3>
+          <ul id="choice-list">
+            {% for item in choice_list %} {% include 'choice_button.html' %} {%
+            endfor %}
+          </ul>
+          <button class="button-standard button-choice" id="add-choice">
+            +
+          </button>
+        </div>
+        <div class="button-bar">
+          <form class="form">
+            <button
+              class="button-standard"
+              id="makeAChoice"
+              onclick="makeChoice(); return false;"
+            >
+              Show a choice below
+            </button>
+          </form>
+        </div>
+        <div class="content-box">
+          <h3 id="choice-made"></h3>
+        </div>
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-2" class="tab-switch" />
+      <label for="tab-2" class="tab-label">Simple-Python</label>
+      <div class="tab-content">
+        <h1>Using Only Python</h1>
+        <p>A much less rich experience.</p>
+        <p>
+          We need Javascript coding to allow us to add, delete or change the
+          choices.
+        </p>
+
+        <div class="content-box">
+          <h3>Choice List</h3>
+
+          <ul id="choice-list">
+            {% for item in choice_list %}
+            <li>{{item}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <form class="form" action="{{url_for('choice_made')}}">
+          <button class="button-standard">Make A Choice</button>
+        </form>
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-3" class="tab-switch" />
+      <label for="tab-3" class="tab-label">Technical Details</label>
+      <div class="tab-content">
+        <h1>content</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="static/js/components/choicemaker/chooser.js"></script>
+
+{% endblock %}
