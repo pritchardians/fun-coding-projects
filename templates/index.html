@@ -1,40 +1,76 @@
 {% extends 'base.html' %} {% block content %}
-<p>
-  I really enjoy building applications using website technology, and I hope you
-  will too! Are you interested in seeing how easy it is to build a site like
-  this? Read on!
-</p>
-<div class="button-bar">
-  <button class="submit submit-narrow">
-    <a href="#">About Me</a>
-    <a href="#">About This site</a>
-  </button>
+
+<div class="wrapper">
+  <div class="tabs">
+    <div class="tab">
+      <input
+              type="radio"
+              name="css-tabs"
+              id="tab-1"
+              checked
+              class="tab-switch"
+      />
+      <label for="tab-1" class="tab-label">Demo</label>
+      <div class="tab-content">
+        <h2>If you are...</h2>
+        <p>interested in how the apps you use n the web are built</p>
+        <h2>Then this is the site for you, because...</h2>
+        <p>This is a bunch of simple little projects I coded.</p>
+        <p>
+          I tried to choose projects that you'll recognize - apps you see and
+          use every day. That way, you'll see that you can create real, useful
+          stuff.
+        </p>
+        <p>I'll give a short explanation about each one.</p>
+        <p>
+          Hopefully, it will give you just enough information to start you
+          digging in and learning how to code them for yourself.
+        </p>
+        <p>
+          Before you know it, you'll be making sites like this (but better)
+          yourself!
+        </p>
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-2" class="tab-switch" />
+      <label for="tab-2" class="tab-label">Technical Details</label>
+      <div class="tab-content">
+        <p>Here is where I talk a bit about the technical details.</p>
+        <p>
+          Hopefully this will get you enthusiastic about digging deeper on the
+          tech stack I am using for each project
+        <div class="content-box">
+          <h2>The code for these projects is here-</h2>
+          <a href="https://github.com/pritchardians/choosier" target="_blank">
+            https://github.com/pritchardians/choosier</a>
+        </div>
+        </p>
+        <p>There is some complexity in my code base because I use Typescript instead of
+          Javascript and sass to generate my css.</p>
+        <p>If none of this makes any sense to you, rotate the cards below to scratch the surface of each of them!</p>
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-3" class="tab-switch" />
+      <label for="tab-3" class="tab-label">Python / Javascript</label>
+      <div class="tab-content">
+        <p>I love using two technologies to create apps.</p>
+        <p>
+          Both have their own unique capabilities. I think they mesh nicely, but
+          this is something I am just starting to explore. Will you join me on
+          this journey?
+        </p>
+        <h2>Python</h2>
+        <h3>Flask</h3>
+        <h2>Javascript</h2>
+        ((Heavy lifting for creating user interactions
+        attach events to HTML elements))
+        <h3>node</h3>
+      </div>
+    </div>
+  </div>
 </div>
-<p>
-  I have been building front-ends in Javascript and back-ends in node for a
-  while now, and I was also enjoying learning Python.
-</p>
-<h2>Command Line Tools? No thanks!</h2>
-<p>
-  I like Python, but all the little programs I built were based on interacting
-  with users through the command line interface-which felt like stepping back a
-  few decades. Having used languages like Visual Basic I love beautiful
-  interfaces.
-</p>
-<p>
-  And then I learned about Flask! This brilliant tool allows Python to interact
-  with humans through web pages. I will still use Javascript to do the heavy
-  lifting in client-side code. But I can at least run the Python with friendly
-  web pages.
-</p>
-<p>If you like poking around, playing with the wee tools I built, have fun!</p>
-<p>
-  If you want to dive deeper and learn a little about how these systems were
-  built, I will walk you through
-</p>
-<div class="content-box">
-  <h2>The tools I use</h2>
-  <h4>HTML 5</h4>
-</div>
+
 
 {% endblock %}

@@ -4,10 +4,23 @@
 // Acceptable values are, for example-
 //  bottom right
 //  top left
+// Defaults to bottom right
 @mixin gradient($direction: bottom right) {
   background-image: linear-gradient(
     to $direction,
     $gradient-colour-1,
     $gradient-colour-2
   );
+}
+
+@mixin gradient-soft($direction: bottom right) {
+  background-image: linear-gradient(
+    to $direction,
+    $gradient-colour-1-soft,
+    $gradient-colour-2-soft
+  );
+}
+
+@mixin shadow-standard() {
+  box-shadow: 0 3px 6px $bright-blue, inset 0 -3px 3px $gray-standard;
 }

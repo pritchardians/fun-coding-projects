@@ -1,0 +1,24 @@
+/* Content Box styling */
+
+.content-box {
+  font-family: "Spline", sans-serif;
+  @include gradient-soft(top left);
+  width: $box-width;
+  margin-top: $margin-standard;
+  margin-bottom: $margin-standard;
+  padding: $padding-standard;
+  display: inline-block;
+  border: $bright-blue solid 2px;
+  border-radius: $border-rounding-standard;
+  text-align: center;
+  color: $text-light;
+  @include shadow-standard();
+
+  ul li {
+    list-style: none;
+  }
+
+  &:hover {
+    color: $text-bright;
+  }
+}

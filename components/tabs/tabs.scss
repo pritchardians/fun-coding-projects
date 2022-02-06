@@ -1,0 +1,81 @@
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tabs {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.tabs::before,
+.tabs::after {
+  content: "";
+  display: table;
+}
+
+.tabs::after {
+  clear: both;
+}
+
+.tab {
+  float: left;
+}
+
+.tab-switch {
+  display: none;
+}
+
+.tab-label {
+  position: relative;
+  display: block;
+  line-height: 2.75em;
+  height: 3.2em;
+  padding: 0 1.618em;
+  cursor: pointer;
+  top: 0;
+  transition: all 0.25s;
+  background-color: white;
+  color: black;
+  border-radius: 20px 0 0 0;
+  margin: 2px 10px;
+  @include gradient-soft();
+}
+
+.tab-label:hover {
+  color: $text-bright;
+}
+
+.tab-content {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  top: 3.25em;
+  left: 0.6em;
+  padding: 1rem;
+  opacity: 0;
+  color: $text-light;
+  width: 100%;
+  transition: all 0.35s;
+  background-image: linear-gradient(
+    $gradient-colour-1-soft,
+    $gradient-colour-2-soft
+  );
+}
+
+.tab-switch:checked + .tab-label {
+  color: #2c3e50;
+  //border-bottom: 0;
+  transition: all 0.35s;
+  z-index: 1;
+  top: -0.0625rem;
+  background-image: none;
+  background-color: $gradient-colour-1-soft;
+}
+
+.tab-switch:checked + label + .tab-content {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.35s;
+}

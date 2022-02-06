@@ -1,0 +1,36 @@
+/*
+=================
+Site-wide styling
+-----------------
+*/
+
+// box-shadow reference: horiz-size vert-size blur colour spread(size) inset
+
+// Load Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300&display=swap");
+
+body {
+  font-family: "Titillium Web", serif;
+  @include gradient(bottom right);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 0;
+  padding-top: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+// Make the very top title fit snug to the page top to align with top nav bar
+.topofpage {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5px;
+}
