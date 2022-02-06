@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="wrapper">
+  <div class="tabs">
+    <div class="tab">
+      <input
+        type="radio"
+        name="css-tabs"
+        id="tab-1"
+        checked
+        class="tab-switch"
+      />
+      <label for="tab-1" class="tab-label">Choice Made</label>
+      <div class="tab-content">
+        <div class="content-box">
+          <h4>Your choice has been made!</h4>
+          <h2>{{choice}}</h2>
+        </div>
+        <form class="form" action="{{url_for('choosy')}}">
+          <button class="button-standard">Back to Choices</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-2" class="tab-switch" />
+      <label for="tab-2" class="tab-label">Technical Details</label>
+      <div class="tab-content"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

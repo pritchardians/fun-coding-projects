@@ -1,6 +1,7 @@
 # Import the packages you need to run the app!
 from flask import Flask, render_template
 import random
+from components.choicemaker import list_choice as chooser
 
 # Create the Flask app
 app = Flask(__name__)
@@ -10,9 +11,6 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html', page_title='Fun Coding Projects')
-
-
-return render_template('index.html', page_title='Fun Coding Projects')
 
 
 # Show a list of choices and a button to make a choice
