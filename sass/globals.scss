@@ -6,8 +6,44 @@ Site-wide styling variables have been loaded
 //Font variables
 $site-font: Signika, sans-serif;
 
+$site-font-weight: 300;
+$font-light: 100;
+$font-heavy: 400;
+
+$site-font-size: 1rem;
+$font-size-xs: $site-font-size * 0.5;
+$font-size-small: $site-font-size * 0.7;
+$font-size-regular: $site-font-size;
+$font-size-plus-tenth: $site-font-size * 1.1;
+$font-size-large: $site-font-size * 2;
+$font-size-xl: $site-font-size * 3;
+$font-size-xxl: $site-font-size * 5;
+
+$site-letter-spacing: 0.3rem;
+$letter-spacing-super-tight: $site-letter-spacing * 0.2;
+$letter-spacing-tight: $site-letter-spacing * 0.5;
+$letter-spacing-normal: $site-letter-spacing;
+$letter-spacing-wide: $site-letter-spacing * 1.3;
+
 $box-width: 40vw;
 $margin-standard: 1rem;
-$margin-button: 0.5rem;
+$margin-half: 0.5rem;
+$margin-button: $margin-half;
+$margin-button-large: 1.5rem;
 $padding-standard: 0.75em;
+$padding-button: 0.5rem;
 $border-rounding-standard: 1rem;
+
+//Relative sizes
+$rel-size-standard: 1rem;
+$rel-size-third: $rel-size-standard * 0.33;
+$rel-size-quarter: $rel-size-standard * 0.25;
+$rel-size-small: $rel-size-standard * 0.75;
+$rel-size-one-and-a-half: $rel-size-standard * 1.5;
+$rel-size-large: $rel-size-standard * 2;
+$rel-size-larger: $rel-size-standard * 3;
+$rel-size-vast: $rel-size-standard * 10;
+
+// Timing
+$transition-standard: 0.15s;
+$transition-long: 0.8s;

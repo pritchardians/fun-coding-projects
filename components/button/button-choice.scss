@@ -1,15 +1,15 @@
 .button-choice {
-  font-size: small;
+  font-size: $font-size-small;
 }
 
 .button-needs-right-margin {
-  margin-right: 1.5rem;
+  margin-right: $margin-button-large;
 }
 
 .choice-text {
-  padding: 0.5rem 1.5rem 0.25rem 0.25rem;
-  //border-radius: 15px;
-  border-top: solid rgb(205, 238, 137) 2px;
-  border-left: solid rgba(255, 255, 255, 0.8) 2px;
+  padding: $padding-button $rel-size-one-and-a-half $rel-size-quarter
+    $rel-size-quarter;
+  border-top: solid $light 2px;
+  border-left: solid $bright 2px;
   @include gradient-soft();
 }

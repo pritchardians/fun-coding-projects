@@ -3,16 +3,16 @@
 .navbar {
   position: fixed;
   width: 98%;
-  padding: 10px 10px 10px 10px;
+  padding: $padding-standard;
   background-color: transparent;
   border-radius: 10px;
-  border-bottom: solid 5px rgba(255, 255, 255, 0.2);
+  border-bottom: solid 5px $ghost-see-through;
 }
 
 .nav-logo a {
-  color: white;
+  color: $sec-text-highlight;
   text-decoration: none;
-  font-size: 24px;
+  font-size: $font-size-large;
   float: left;
 }
 
@@ -27,7 +27,7 @@
 .navbar .nav-links {
   display: inline;
   float: right;
-  font-size: 18px;
+  font-size: $font-size-plus-tenth;
 }
 
 .navbar .nav-links .loginBtn {
@@ -38,7 +38,7 @@
   font-size: 15px;
   font-weight: bold;
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
+  color: $ghost-color;
 }
 
 .navbar .nav-links .loginBtn:hover {

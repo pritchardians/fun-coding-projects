@@ -8,7 +8,7 @@
 //Mixins
 @import "mixins";
 // Colour palette
-@import "pallette";
+@import "palette";
 
 /* Components */
 // Site styling
@@ -18,3 +18,4 @@
 @import "./components/button/button-choice";
 @import "./components/tabs/tabs";
 @import "./components/navbar/navbar";
+@import "./components/flip-card/flip-card";

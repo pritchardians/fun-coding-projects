@@ -11,7 +11,7 @@
   border: $bright-blue solid 2px;
   border-radius: $border-rounding-standard;
   text-align: center;
-  color: $text-light;
+  color: $prim-text;
   @include shadow-standard();
 
   ul li {
@@ -19,6 +19,16 @@
   }
 
   &:hover {
-    color: $text-bright;
+    color: $prim-text-highlight;
   }
+}
+
+.content-box-subtitle {
+  font-size: $font-size-large;
+  color: $prim-text-highlight;
+}
+
+.content-box-content {
+  font-size: $font-size-regular;
+  color: $prim-text;
 }

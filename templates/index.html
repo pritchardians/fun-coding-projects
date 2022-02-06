@@ -1,80 +1,125 @@
 {% extends 'base.html' %} {% block content %}
 
 <div class="wrapper">
-  <div class="tabs">
-    <div class="tab">
-      <input
-              type="radio"
-              name="css-tabs"
-              id="tab-1"
-              checked
-              class="tab-switch"
-      />
-      <label for="tab-1" class="tab-label">Description</label>
-      <div class="tab-content">
-        <h2>If you are...</h2>
-        <p>interested in how the apps you use n the web are built</p>
-        <h2>Then this is the site for you, because...</h2>
-        <p>This is a bunch of simple little projects I coded.</p>
-        <p>
-          I tried to choose projects that you'll recognize - apps you see and
-          use every day. That way, you'll see that you can create real, useful
-          stuff.
-        </p>
-        <p>I'll give a short explanation about each one.</p>
-        <p>
-          Hopefully, it will give you just enough information to start you
-          digging in and learning how to code them for yourself.
-        </p>
-        <p>
-          Before you know it, you'll be making sites like this (but better)
-          yourself!
-        </p>
-      </div>
-    </div>
-    <div class="tab">
-      <input type="radio" name="css-tabs" id="tab-2" class="tab-switch" />
-      <label for="tab-2" class="tab-label">Technical Details</label>
-      <div class="tab-content">
-        <p>Here is where I talk a bit about the technical details.</p>
-        <p>
-          Hopefully this will get you enthusiastic about digging deeper on the
-          tech stack I am using for each project
-        <div class="content-box">
-        <h3>How to see the code</h3>
-          <p>The code for these projects is here</p>
-          <a href="https://github.com/pritchardians/fun-coding-projects" target="_blank">
-            https://github.com/pritchardians/fun-coding-projects</a>
-        <p>And it runs on a server here</p>
-        <a href="https://fun-coding-projects.herokuapp.com/" target="_blank">
-          Heroku App</a>
-        <div class="warning-box">NOTE: It may take a minute or two for the Heroku server to start up!</div>
+    <div class="tabs">
+        <div class="tab">
+            <input
+                    type="radio"
+                    name="css-tabs"
+                    id="tab-1"
+                    checked
+                    class="tab-switch"
+            />
+            <label for="tab-1" class="tab-label">Description</label>
+            <div class="tab-content">
+                <h2>If you are...</h2>
+                <p>interested in how the apps you use n the web are built</p>
+                <h2>Then this is the site for you, because...</h2>
+                <p>This is a bunch of simple little projects I coded.</p>
+                <p>
+                    I tried to choose projects that you'll recognize - apps you see and
+                    use every day. That way, you'll see that you can create real, useful
+                    stuff.
+                </p>
+                <p>I'll give a short explanation about each one.</p>
+                <p>
+                    Hopefully, it will give you just enough information to start you
+                    digging in and learning how to code them for yourself.
+                </p>
+                <p>
+                    Before you know it, you'll be making sites like this (but better)
+                    yourself!
+                </p>
+            </div>
         </div>
-        </p>
-        <p>There is some complexity in my code base because I use Typescript instead of
-          Javascript and sass to generate my css.</p>
-        <p>If none of this makes any sense to you, rotate the cards below to scratch the surface of each of them!</p>
-      </div>
+        <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch"/>
+            <label for="tab-2" class="tab-label">Technical Details</label>
+            <div class="tab-content">
+                <p>Here is where I talk a bit about the technical details.</p>
+                <p>
+                    Hopefully this will get you enthusiastic about digging deeper on the
+                    tech stack I am using for each project
+                <div class="content-box">
+                    <h3>How to see the code</h3>
+                    <p>The code for these projects is here</p>
+                    <a href="https://github.com/pritchardians/fun-coding-projects" target="_blank">
+                        https://github.com/pritchardians/fun-coding-projects</a>
+                    <p>And it runs on a server here</p>
+                    <a href="https://fun-coding-projects.herokuapp.com/" target="_blank">
+                        Heroku App</a><br>
+                    <div class="warning-box">NOTE: It may take a minute or two for the Heroku server to start up!</div>
+                </div>
+                </p>
+                <p>There is some complexity in my code base because I use Typescript instead of
+                    Javascript and sass to generate my css.</p>
+                <p>If none of this makes any sense to you, rotate the cards below to scratch the surface of each of
+                    them!</p>
+                <div class="flip-card-box">
+                    <div class="flip-card feature-item">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="content-box-subtitle">Styling</div>
+                                <div class="content-box-content">sass is a way of buil</div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="content-box-subtitle">CSS</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card feature-item">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="content-box-subtitle">Front End Code</div>
+                                <div class="content-box-content">
+                                    <p>I use Typescript for the complex website interaction.</p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="content-box-subtitle">Javascript</div>
+                                <div class="content-box-content"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card feature-item">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="content-box-subtitle">Batch Work</div>
+                                <div class="content-box-content">
+                                    <p>Used for number crunching, and other long-running tasks</p></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="content-box-subtitle">Python</div>
+                                <div class="content-box-content"></div>
+                                <div class="content-box-subtitle">Flask</div>
+                                <div class="content-box-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-3" class="tab-switch"/>
+            <label for="tab-3" class="tab-label">Python / Javascript</label>
+            <div class="tab-content">
+                <p>I love using two technologies to create apps.</p>
+                <p>
+                    Both have their own unique capabilities. I think they mesh nicely, but
+                    this is something I am just starting to explore. Will you join me on
+                    this journey?
+                </p>
+                <h2>Python</h2>
+                <h3>Flask</h3>
+                <h2>Javascript</h2>
+                ((Heavy lifting for creating user interactions
+                attach events to HTML elements))
+                <h3>node</h3>
+            </div>
+        </div>
     </div>
-    <div class="tab">
-      <input type="radio" name="css-tabs" id="tab-3" class="tab-switch" />
-      <label for="tab-3" class="tab-label">Python / Javascript</label>
-      <div class="tab-content">
-        <p>I love using two technologies to create apps.</p>
-        <p>
-          Both have their own unique capabilities. I think they mesh nicely, but
-          this is something I am just starting to explore. Will you join me on
-          this journey?
-        </p>
-        <h2>Python</h2>
-        <h3>Flask</h3>
-        <h2>Javascript</h2>
-        ((Heavy lifting for creating user interactions
-        attach events to HTML elements))
-        <h3>node</h3>
-      </div>
-    </div>
-  </div>
 </div>
 
 

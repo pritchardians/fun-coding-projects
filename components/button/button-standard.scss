@@ -7,20 +7,20 @@
     $button-unpressed-standard-secondary
   );
   border: 0;
-  border-radius: 2rem;
+  border-radius: $rel-size-large;
   box-shadow: $button-shadow-standard 0 3px 7px inset;
   box-sizing: border-box;
-  color: $text-light;
+  color: $prim-text-highlight;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
   overflow: hidden;
-  padding: 0.33rem 1rem;
+  padding: $rel-size-third $rel-size-standard;
   position: relative;
-  transition: box-shadow 0.15s, transform 0.15s;
+  transition: box-shadow $transition-standard, transform $transition-standard;
   -webkit-user-select: none;
-  font-size: medium;
-  margin-top: 1rem;
+  font-size: $font-size-regular;
+  margin-top: $margin-standard;
   text-decoration: none;
 }
 

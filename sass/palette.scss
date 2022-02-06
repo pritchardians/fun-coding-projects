@@ -1,0 +1,43 @@
+/* Palette loaded
+Blue-Green theme-Pritchard's Planet
+*/
+
+$gradient-colour-1: rgba(173, 255, 47, 1);
+$gradient-colour-2: rgba(3, 3, 79, 1);
+$gradient-colour-1-soft: rgba(180, 241, 88, 0.5);
+$gradient-colour-2-soft: rgba(102, 102, 241, 0.5);
+
+$bright-blue: $gradient-colour-2;
+$gray-standard: rgba(0, 0, 0, 0.1);
+
+// general colours
+$light: rgb(248, 248, 147);
+$bright: rgb(255, 255, 240);
+
+$prim-text: rgb(168, 221, 168);
+$prim-text-highlight: $bright;
+$prim-text-dark: rgb(5, 53, 88);
+$prim-text-extra-bright: rgb(252, 252, 4);
+
+$sec-text: rgb(191, 220, 174);
+$sec-text-highlight: rgb(241, 241, 232);
+$sec-text-dark: rgb(32, 106, 93);
+
+// Button colours
+$button-unpressed-standard: rgb(11, 129, 46);
+$button-unpressed-standard-secondary: rgb(69, 238, 78);
+$button-shadow-standard: rgb(149, 238, 143);
+$button-pressed-shadow-standard: rgb(19, 98, 13);
+
+$button-blue: rgb(107, 107, 245);
+
+/* Flip Card Colours */
+$prim-back-flip: rgba(8, 149, 252, 0.9);
+$sec-back-flip: rgba(129, 178, 20, 0.9);
+
+$highlight-color: $prim-text-highlight;
+$ghost-color: rgba(200, 200, 200, 0.6);
+$ghost-see-through: rgba(255, 255, 255, 0.2);
+
+// Use this color to test whether you are affecting a style. Not for production-use!
+$awful-pink: #e8536d;
