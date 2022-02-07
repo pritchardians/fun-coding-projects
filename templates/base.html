@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="../static/style/main.css" />
-  <!--Import icons-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
-  <title>Choosier: {{page_title}}</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../static/style/main.css"/>
+    <!--Import icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    <title>Choosier: {{page_title}}</title>
 </head>
 <body>
 
 
 <div class="navbar">
-  <!-- Navbar logo -->
-  <div class="nav-header">
-    <div class="nav-logo">
-      <a href="#"> Ian Pritchard </a>
+    <!-- Navbar logo -->
+    <div class="nav-header">
+        <div class="nav-logo">
+            <a href="{{url_for('index')}}">Fun Coding Projects</a>
+        </div>
     </div>
-  </div>
 
-  <!-- responsive navbar toggle button -->
-  <input type="checkbox" id="nav-check" />
-  <div class="nav-btn">
-    <label for="nav-check">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-  </div>
+    <!-- responsive navbar toggle button -->
+    <input type="checkbox" id="nav-check"/>
+    <div class="nav-btn">
+        <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
 
-  <!-- Navbar items -->
-  <div class="nav-links">
+    <!-- Navbar items -->
+    <div class="nav-links">
         <a href="{{url_for('index')}}">Home</a>
         <a href="{{url_for('choosy')}}">Choosy</a>
-  </div>
+    </div>
 </div>
 
 <h1 class="topofpage">{{page_title}}</h1>
+<div class="button-bar">
+    <button class="button-standard" id="font-size-small-button">
+        Small Font
+    </button>
+    <button class="button-standard" id="font-size-medium-button">
+        Medium Font
+    </button>
+    <button class="button-standard" id="font-size-large-button">
+        Large Font
+    </button>
+</div>
 
 {% block content %} {% endblock %}
 <p></p>
+
 <script src="static/js/src/app.js" type="module"></script
 </body>
 </html>

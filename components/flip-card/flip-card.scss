@@ -17,7 +17,7 @@
 
 @media only screen and (min-width: 321px) and (max-width: 610px) {
   .flip-card {
-    width: 100%;
+    width: $fullsized;
     margin: $margin-standard $margin-half;
   }
 }
@@ -31,8 +31,8 @@
 
 .flip-card-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: $fullsized;
+  height: $fullsized;
   text-align: center;
   transition: transform $transition-long;
   transform-style: preserve-3d;
@@ -45,8 +45,8 @@
 .flip-card-front,
 .flip-card-back {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: $fullsized;
+  height: $fullsized;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }

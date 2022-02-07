@@ -1,16 +1,16 @@
 .navbar {
   position: fixed;
   width: 98%;
-  padding: 10px 10px 10px 10px;
+  padding: $rel-size-small;
   background-color: transparent;
-  border-radius: 10px;
-  border-bottom: solid 5px rgba(255, 255, 255, 0.2);
+  border-radius: $rel-size-small;
+  border-bottom: solid $rel-size-third $ghost-see-through;
 }
 
 .nav-logo a {
-  color: white;
+  color: $prim-text-highlight;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 2em;
 }
 
 .navbar .nav-header {
@@ -24,7 +24,7 @@
 .navbar .nav-links {
   display: inline;
   float: right;
-  font-size: 18px;
+  font-size: $font-size-plus-tenth;
 }
 
 .navbar .nav-links .loginBtn {
@@ -36,6 +36,7 @@
   font-weight: bold;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
+  font-size: $font-size-regular;
 }
 
 .navbar .nav-links .loginBtn:hover {

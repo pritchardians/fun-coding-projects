@@ -2,20 +2,20 @@
   align-items: center;
   appearance: none;
   background-image: radial-gradient(
-    100% 100% at 85% 0,
+    $fullsized $fullsized at $almost-full $fullsized,
     $button-unpressed-standard,
     $button-unpressed-standard-secondary
   );
-  border: 0;
+  border: $nothing;
   border-radius: $rel-size-large;
-  box-shadow: $button-shadow-standard 0 3px 7px inset;
+  box-shadow: $button-shadow-standard $nothing $abs-3 $abs-7 inset;
   box-sizing: border-box;
   color: $prim-text-highlight;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
   overflow: hidden;
-  padding: $rel-size-third $rel-size-standard;
+  padding: $abs-7 $abs-10;
   position: relative;
   transition: box-shadow $transition-standard, transform $transition-standard;
   -webkit-user-select: none;
@@ -25,11 +25,11 @@
 }
 
 .button-standard:hover {
-  transform: translateY(-2px);
+  transform: translateY($abs-minus-2);
 }
 
 .button-standard:active {
-  box-shadow: $button-pressed-shadow-standard 0 3px 7px,
-    $button-pressed-shadow-standard 0 3px 7px inset;
-  transform: translateY(2px);
+  box-shadow: $button-pressed-shadow-standard $nothing $abs-3 $abs-7,
+    $button-pressed-shadow-standard $nothing $abs-3 $abs-7 inset;
+  transform: translateY($abs-minus-2);
 }

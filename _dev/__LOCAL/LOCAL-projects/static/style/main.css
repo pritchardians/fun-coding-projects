@@ -19,7 +19,7 @@ Site-wide styling
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300&display=swap");
 body {
   font-family: "Titillium Web", serif;
-  font-size: 1em;
+  font-size: 1rem;
   background-image: linear-gradient(to bottom right, greenyellow, #03034f);
   display: flex;
   flex-direction: column;
@@ -37,13 +37,13 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 3em;
+  font-size: 3rem;
   margin-top: 5px; }
 
 /* Content Box styling */
 .content-box {
   font-family: "Spline", sans-serif;
-  font-size: 2em;
+  font-size: 2rem;
   background-image: linear-gradient(to top left, rgba(180, 241, 88, 0.5), rgba(102, 102, 241, 0.5));
   width: 40vw;
   margin-top: 1rem;
@@ -61,11 +61,11 @@ h1 {
     color: ivory; }
 
 .content-box-subtitle {
-  font-size: 2em;
+  font-size: 2rem;
   color: ivory; }
 
 .content-box-content {
-  font-size: 1em;
+  font-size: 1rem;
   color: #a8dda8; }
 
 .button-standard {
@@ -85,7 +85,7 @@ h1 {
   position: relative;
   transition: box-shadow 0.15s, transform 0.15s;
   -webkit-user-select: none;
-  font-size: 1em;
+  font-size: 1rem;
   margin-top: 1rem;
   text-decoration: none; }
 
@@ -97,7 +97,7 @@ h1 {
   transform: translateY(-2px); }
 
 .button-choice {
-  font-size: 0.7em; }
+  font-size: 0.7rem; }
 
 .button-needs-right-margin {
   margin-right: 1.5rem; }
@@ -106,7 +106,7 @@ h1 {
   padding: 0.5rem 1.5rem 0.25rem 0.25rem;
   border-top: solid #f8f893 2px;
   border-left: solid ivory 2px;
-  font-size: 1em;
+  font-size: 1rem;
   background-image: linear-gradient(to bottom right, rgba(180, 241, 88, 0.5), rgba(102, 102, 241, 0.5)); }
 
 .wrapper {
@@ -187,7 +187,7 @@ h1 {
 .nav-logo a {
   color: ivory;
   text-decoration: none;
-  font-size: 2em; }
+  font-size: 2rem; }
 
 .navbar .nav-header {
   display: inline; }
@@ -198,7 +198,7 @@ h1 {
 .navbar .nav-links {
   display: inline;
   float: right;
-  font-size: 1.1em; }
+  font-size: 1.1rem; }
 
 .navbar .nav-links .loginBtn {
   border: rgba(255, 255, 255, 0.5) solid 2px;
@@ -208,8 +208,7 @@ h1 {
   font-size: 15px;
   font-weight: bold;
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 1em; }
+  color: rgba(255, 255, 255, 0.6); }
 
 .navbar .nav-links .loginBtn:hover {
   color: white;

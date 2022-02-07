@@ -2,13 +2,14 @@
 
 .content-box {
   font-family: "Spline", sans-serif;
+  font-size: $font-size-large;
   @include gradient-soft(top left);
   width: $box-width;
   margin-top: $margin-standard;
   margin-bottom: $margin-standard;
   padding: $padding-standard;
   display: inline-block;
-  border: $bright-blue solid 2px;
+  border: $bright-blue solid $abs-2;
   border-radius: $border-rounding-standard;
   text-align: center;
   color: $prim-text;
