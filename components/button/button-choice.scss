@@ -5,12 +5,3 @@
 .button-needs-right-margin {
   margin-right: $margin-button-large;
 }
-
-.choice-text {
-  padding: $padding-button $rel-size-one-and-a-half $rel-size-quarter
-    $rel-size-quarter;
-  border-top: solid $light $abs-2;
-  border-left: solid $bright $abs-2;
-  font-size: $font-size-regular;
-  @include gradient-soft();
-}

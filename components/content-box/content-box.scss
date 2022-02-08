@@ -2,7 +2,7 @@
 
 .content-box {
   font-family: "Spline", sans-serif;
-  font-size: $font-size-large;
+  font-size: $font-size-regular;
   @include gradient-soft(top left);
   width: $box-width;
   margin-top: $margin-standard;

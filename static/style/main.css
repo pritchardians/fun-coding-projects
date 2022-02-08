@@ -33,7 +33,8 @@ body {
 
 .topofpage {
   margin-top: 0;
-  padding-top: 0; }
+  padding-top: 0;
+  z-index: 99999; }
 
 h1 {
   text-align: center;
@@ -43,8 +44,8 @@ h1 {
 /* Content Box styling */
 .content-box {
   font-family: "Spline", sans-serif;
-  font-size: 2em;
-  background-image: linear-gradient(to top left, rgba(180, 241, 88, 0.5), rgba(102, 102, 241, 0.5));
+  font-size: 1em;
+  background-image: linear-gradient(to top left, #9bdc55, #6666f1);
   width: 40vw;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -102,13 +103,6 @@ h1 {
 .button-needs-right-margin {
   margin-right: 1.5rem; }
 
-.choice-text {
-  padding: 0.5rem 1.5rem 0.25rem 0.25rem;
-  border-top: solid #f8f893 2px;
-  border-left: solid ivory 2px;
-  font-size: 1em;
-  background-image: linear-gradient(to bottom right, rgba(180, 241, 88, 0.5), rgba(102, 102, 241, 0.5)); }
-
 .wrapper {
   max-width: 50rem;
   width: 100%;
@@ -145,7 +139,7 @@ h1 {
   color: black;
   border-radius: 20px 0 0 0;
   margin: 2px 10px;
-  background-image: linear-gradient(to bottom right, rgba(180, 241, 88, 0.5), rgba(102, 102, 241, 0.5)); }
+  background-image: linear-gradient(to bottom right, #9bdc55, #6666f1); }
 
 .tab-label:hover {
   color: #f1f1e8; }
@@ -153,7 +147,6 @@ h1 {
 .tab-content {
   position: absolute;
   text-align: center;
-  z-index: 1;
   top: 3.25em;
   left: 0.6em;
   padding: 1rem;
@@ -161,7 +154,7 @@ h1 {
   color: #bfdcae;
   width: 100%;
   transition: all 0.35s;
-  background-image: linear-gradient(rgba(180, 241, 88, 0.5), rgba(102, 102, 241, 0.5)); }
+  background-image: linear-gradient(#9bdc55, #6666f1); }
 
 .tab-switch:checked + .tab-label {
   color: #2c3e50;
@@ -169,7 +162,7 @@ h1 {
   z-index: 1;
   top: -0.0625rem;
   background-image: none;
-  background-color: rgba(180, 241, 88, 0.5); }
+  background-color: #9bdc55; }
 
 .tab-switch:checked + label + .tab-content {
   z-index: 2;
@@ -179,15 +172,21 @@ h1 {
 .navbar {
   position: fixed;
   width: 98%;
-  padding: 0.75rem;
-  background-color: transparent;
-  border-radius: 0.75rem;
-  border-bottom: solid 0.33rem rgba(255, 255, 255, 0.2); }
+  background-image: linear-gradient(to top, greenyellow, #03034f);
+  z-index: 100;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: 3px #f8f893 solid;
+  padding-right: 10px;
+  padding-left: 10px; }
 
 .nav-logo a {
   color: ivory;
   text-decoration: none;
   font-size: 2em; }
+
+.nav-logo a:hover {
+  color: #a8dda8; }
 
 .navbar .nav-header {
   display: inline; }
@@ -198,35 +197,17 @@ h1 {
 .navbar .nav-links {
   display: inline;
   float: right;
-  font-size: 1.1em; }
-
-.navbar .nav-links .loginBtn {
-  border: rgba(255, 255, 255, 0.5) solid 2px;
-  padding: 5px 15px;
-  border-radius: 10px;
-  margin: 3px;
-  font-size: 15px;
-  font-weight: bold;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 1em; }
-
-.navbar .nav-links .loginBtn:hover {
-  color: white;
-  border: white solid 2px;
-  /*border-radius: 14px;*/ }
+  margin: 20px; }
 
 .navbar .nav-links a {
-  margin-top: 10px;
-  margin-left: 10px;
-  padding: 4px;
+  font-size: 1.1em;
+  color: #a8dda8;
   text-decoration: none;
-  font-weight: 550;
-  color: rgba(255, 255, 255, 0.6); }
+  padding: 10px; }
 
 /* Hover effects */
 .navbar .nav-links a:hover {
-  color: white;
+  color: ivory;
   border-bottom: solid rgba(255, 255, 255, 0.4) 2px;
   border-left: solid rgba(255, 255, 255, 0.8) 2px;
   border-radius: 10px;
@@ -339,3 +320,35 @@ h1 {
 .flip-card-back {
   background-image: linear-gradient(to top left, rgba(129, 178, 20, 0.9), rgba(8, 149, 252, 0.9));
   transform: rotateY(180deg); }
+
+/* range styling */
+.range-container {
+  position: relative;
+  float: right;
+  margin-left: 10px; }
+
+#font-size-slider {
+  width: 80px; }
+  #font-size-slider::-webkit-slider-runnable-track {
+    background-image: linear-gradient(to bottom right, greenyellow, #03034f);
+    border: none;
+    border-radius: 10px; }
+
+#font-size-slider-label {
+  background-image: linear-gradient(to bottom right, #9bdc55, #6666f1);
+  font-size: 0.7em;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 30px;
+  border-top: solid 2px white;
+  border-left: solid 2px white;
+  border-radius: 5px;
+  text-align: center; }
+
+.choice-text {
+  padding: 0.5rem 1.5rem 0.25rem 0.25rem;
+  border-top: solid #f8f893 2px;
+  border-left: solid ivory 2px;
+  font-size: 1em;
+  background-image: linear-gradient(to bottom right, #9bdc55, #6666f1); }

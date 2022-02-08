@@ -1,16 +1,24 @@
 .navbar {
   position: fixed;
   width: 98%;
-  padding: $rel-size-small;
-  background-color: transparent;
-  border-radius: $rel-size-small;
-  border-bottom: solid $rel-size-third $ghost-see-through;
+  @include gradient(top);
+  z-index: 100;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: 3px $light solid;
+  //box-shadow: $bright 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .nav-logo a {
   color: $prim-text-highlight;
   text-decoration: none;
-  font-size: 2em;
+  font-size: $font-size-large;
+}
+
+.nav-logo a:hover {
+  color: $prim-text;
 }
 
 .navbar .nav-header {
@@ -24,39 +32,19 @@
 .navbar .nav-links {
   display: inline;
   float: right;
-  font-size: $font-size-plus-tenth;
-}
-
-.navbar .nav-links .loginBtn {
-  border: rgba(255, 255, 255, 0.5) solid 2px;
-  padding: 5px 15px;
-  border-radius: 10px;
-  margin: 3px;
-  font-size: 15px;
-  font-weight: bold;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: $font-size-regular;
-}
-
-.navbar .nav-links .loginBtn:hover {
-  color: white;
-  border: rgba(255, 255, 255, 1) solid 2px;
-  /*border-radius: 14px;*/
+  margin: 20px;
 }
 
 .navbar .nav-links a {
-  margin-top: 10px;
-  margin-left: 10px;
-  padding: 4px;
+  font-size: $font-size-plus-tenth;
+  color: $prim-text;
   text-decoration: none;
-  font-weight: 550;
-  color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
 }
 
 /* Hover effects */
 .navbar .nav-links a:hover {
-  color: white;
+  color: $prim-text-highlight;
   border-bottom: solid rgba(255, 255, 255, 0.4) 2px;
   border-left: solid rgba(255, 255, 255, 0.8) 2px;
   border-radius: 10px;

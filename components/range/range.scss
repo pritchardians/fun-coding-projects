@@ -1,0 +1,30 @@
+/* range styling */
+
+.range-container {
+  position: relative;
+  float: right;
+  margin-left: 10px;
+}
+
+#font-size-slider {
+  width: 80px;
+
+  &::-webkit-slider-runnable-track {
+    @include gradient();
+    border: none;
+    border-radius: 10px;
+  }
+}
+
+#font-size-slider-label {
+  @include gradient-soft();
+  font-size: $font-size-small;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 30px;
+  border-top: solid 2px white;
+  border-left: solid 2px white;
+  border-radius: 5px;
+  text-align: center;
+}
