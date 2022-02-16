@@ -3,12 +3,10 @@
   width: 98%;
   @include gradient(top);
   z-index: 100;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom: 3px $light solid;
-  //box-shadow: $bright 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  border-bottom-left-radius: $border-rounding-large;
+  border-bottom-right-radius: $border-rounding-large;
+  @include shadow-standard();
+  padding: 0 $padding-button;
 }
 
 .nav-logo a {
@@ -32,23 +30,23 @@
 .navbar .nav-links {
   display: inline;
   float: right;
-  margin: 20px;
+  margin: $margin-large-abs;
 }
 
 .navbar .nav-links a {
   font-size: $font-size-plus-tenth;
   color: $prim-text;
   text-decoration: none;
-  padding: 10px;
+  padding: $margin-standard-abs;
 }
 
 /* Hover effects */
 .navbar .nav-links a:hover {
   color: $prim-text-highlight;
-  border-bottom: solid rgba(255, 255, 255, 0.4) 2px;
-  border-left: solid rgba(255, 255, 255, 0.8) 2px;
-  border-radius: 10px;
-  transition: all 0.1s ease-in;
+  border-bottom: solid $white-very-transparent $rel-size-teensy;
+  border-left: solid $white-slight-transparent $rel-size-teensy;
+  border-radius: $border-rounding-standard;
+  transition: all $transition-standard ease-in;
 }
 
 /* responsive navbar toggle button */
@@ -60,6 +58,8 @@
 @media (max-width: 1000px) {
   .navbar {
     border: none;
+    box-shadow: none;
+    background-image: none;
   }
 
   .nav-logo a {
@@ -69,62 +69,56 @@
   .navbar .nav-btn {
     display: inline-block;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: $nothing;
+    right: $nothing;
   }
 
   .navbar .nav-btn label {
     display: inline-block;
     width: 50px;
     height: 50px;
-    padding: 15px 0 0 10px;
+    padding: 15px $nothing $nothing $abs-10;
   }
 
   .navbar .nav-btn label span {
     display: block;
-    height: 10px;
+    height: $abs-10;
     width: 25px;
-    border-top: 3px solid #eee;
+    border-top: 3px solid $highlight-color;
   }
 
   .navbar .nav-btn label:hover,
   .navbar #nav-check:checked ~ .nav-btn label {
-    background-color: rgba(9, 14, 90, 0.1);
+    background-color: $gray-standard;
   }
 
   .navbar .nav-links {
     position: absolute;
     display: block;
     text-align: center;
-    background-color: rgba(9, 14, 90, 0.1);
+    background-color: $gradient-colour-1-soft;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 55px;
-    right: 0px;
+    right: $nothing;
+    z-index: 100;
   }
 
   .navbar .nav-links a {
     display: block;
-    margin-left: 20px;
+    margin-left: $margin-large-abs $nothing;
     margin-right: 20px;
   }
 
   /* when nav toggle button not checked */
   .navbar #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
+    height: $nothing;
   }
 
   /* when nav toggle button is checked */
   .navbar #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 70px);
-    overflow-y: auto;
-  }
-
-  .navbar .nav-links .loginBtn {
-    padding: 10px 40px;
-    margin: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: rgb(9, 14, 90);
+    padding-bottom: 50px;
+    //height: calc(100vh - 70px);
+    //overflow-y: auto;
   }
 }

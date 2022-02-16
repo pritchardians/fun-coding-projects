@@ -57,7 +57,9 @@ h1 {
   color: #a8dda8;
   box-shadow: 0 3px 6px #03034f, inset 0 -3px 3px rgba(0, 0, 0, 0.1); }
   .content-box ul li {
-    list-style: none; }
+    list-style: none;
+    font-size: 1.1em;
+    margin-top: 0.33rem; }
   .content-box:hover {
     color: ivory; }
 
@@ -69,6 +71,7 @@ h1 {
   font-size: 1em;
   color: #a8dda8; }
 
+/* Standard Button styling */
 .button-standard {
   align-items: center;
   appearance: none;
@@ -97,6 +100,7 @@ h1 {
   box-shadow: #13620d 0 3px 7px, #13620d 0 3px 7px inset;
   transform: translateY(-2px); }
 
+/* Choice Button styling */
 .button-choice {
   font-size: 0.7em; }
 
@@ -135,8 +139,6 @@ h1 {
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
-  background-color: white;
-  color: black;
   border-radius: 20px 0 0 0;
   margin: 2px 10px;
   background-image: linear-gradient(to bottom right, #9bdc55, #6666f1); }
@@ -159,13 +161,13 @@ h1 {
 .tab-switch:checked + .tab-label {
   color: #2c3e50;
   transition: all 0.35s;
-  z-index: 1;
   top: -0.0625rem;
   background-image: none;
   background-color: #9bdc55; }
 
 .tab-switch:checked + label + .tab-content {
   z-index: 2;
+  /* Place the tab behind the tab content so the colors blend smoothly*/
   opacity: 1;
   transition: all 0.35s; }
 
@@ -176,9 +178,8 @@ h1 {
   z-index: 100;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  border-bottom: 3px #f8f893 solid;
-  padding-right: 10px;
-  padding-left: 10px; }
+  box-shadow: 0 3px 6px #03034f, inset 0 -3px 3px rgba(0, 0, 0, 0.1);
+  padding: 0 0.5rem; }
 
 .nav-logo a {
   color: ivory;
@@ -211,7 +212,7 @@ h1 {
   border-bottom: solid rgba(255, 255, 255, 0.4) 2px;
   border-left: solid rgba(255, 255, 255, 0.8) 2px;
   border-radius: 10px;
-  transition: all 0.1s ease-in; }
+  transition: all 0.15s ease-in; }
 
 /* responsive navbar toggle button */
 .navbar #nav-check,
@@ -220,14 +221,16 @@ h1 {
 
 @media (max-width: 1000px) {
   .navbar {
-    border: none; }
+    border: none;
+    box-shadow: none;
+    background-image: none; }
   .nav-logo a {
     display: none; }
   .navbar .nav-btn {
     display: inline-block;
     position: absolute;
-    top: 0px;
-    right: 0px; }
+    top: 0;
+    right: 0; }
   .navbar .nav-btn label {
     display: inline-block;
     width: 50px;
@@ -237,36 +240,30 @@ h1 {
     display: block;
     height: 10px;
     width: 25px;
-    border-top: 3px solid #eee; }
+    border-top: 3px solid ivory; }
   .navbar .nav-btn label:hover,
   .navbar #nav-check:checked ~ .nav-btn label {
-    background-color: rgba(9, 14, 90, 0.1); }
+    background-color: rgba(0, 0, 0, 0.1); }
   .navbar .nav-links {
     position: absolute;
     display: block;
     text-align: center;
-    background-color: rgba(9, 14, 90, 0.1);
+    background-color: #9bdc55;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 55px;
-    right: 0px; }
+    right: 0;
+    z-index: 100; }
   .navbar .nav-links a {
     display: block;
-    margin-left: 20px;
+    margin-left: 20px 0;
     margin-right: 20px; }
   /* when nav toggle button not checked */
   .navbar #nav-check:not(:checked) ~ .nav-links {
-    height: 0px; }
+    height: 0; }
   /* when nav toggle button is checked */
   .navbar #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 70px);
-    overflow-y: auto; }
-  .navbar .nav-links .loginBtn {
-    padding: 10px 40px;
-    margin: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #090e5a; } }
+    padding-bottom: 50px; } }
 
 .flip-card-box {
   display: flex;
@@ -346,9 +343,45 @@ h1 {
   border-radius: 5px;
   text-align: center; }
 
+/* Choice Text styling */
 .choice-text {
   padding: 0.5rem 1.5rem 0.25rem 0.25rem;
   border-top: solid #f8f893 2px;
   border-left: solid ivory 2px;
   font-size: 1em;
   background-image: linear-gradient(to bottom right, #9bdc55, #6666f1); }
+
+/* Styling for Flexy page */
+.inline-container,
+.flex-container {
+  padding: 2rem;
+  margin: 2rem;
+  border: #03034f 2px solid;
+  box-shadow: 0 3px 6px #03034f, inset 0 -3px 3px rgba(0, 0, 0, 0.1); }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; }
+
+.inline-cell,
+.flex-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #03034f 3px;
+  background-image: linear-gradient(to bottom right, #9bdc55, #6666f1);
+  color: #053558;
+  font-weight: bolder;
+  box-shadow: 0 3px 6px #03034f, inset 0 -3px 3px rgba(0, 0, 0, 0.1);
+  min-width: 100px;
+  height: 50px; }
+
+.inline-cell {
+  margin: 10px; }
+
+.flex-cell {
+  flex-grow: 1; }
+
+.flex-cell-grow {
+  flex-grow: 4; }

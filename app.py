@@ -26,6 +26,11 @@ def choice_made():
     choice = chooser.make_choice()
     return render_template('choice_made.html', page_title='Choosy - Choice Made', choice=choice)
 
+@app.route('/flexy')
+def flexy():
+    return render_template('flexy.html', page_title='Flexy')
+
+
 
 # Page Not Found page
 @app.errorhandler(404)

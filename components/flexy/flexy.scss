@@ -1,0 +1,41 @@
+/* Styling for Flexy page */
+
+.inline-container,
+.flex-container {
+  padding: $padding-large;
+  margin: $margin-large;
+  border: $bright-blue $abs-2 solid;
+  @include shadow-standard();
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $margin-standard-abs;
+}
+
+.inline-cell,
+.flex-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid $bright-blue 3px;
+  @include gradient-soft();
+  color: $prim-text-dark;
+  font-weight: bolder;
+  @include shadow-standard();
+  min-width: 100px;
+  height: 50px;
+}
+
+.inline-cell {
+  margin: $abs-10;
+}
+
+.flex-cell {
+  flex-grow: 1;
+}
+
+.flex-cell-grow {
+  flex-grow: 4;
+}

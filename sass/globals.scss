@@ -27,12 +27,18 @@ $letter-spacing-wide: $site-letter-spacing * 1.3;
 
 $box-width: 40vw;
 $margin-standard: 1rem;
+$margin-standard-abs: 10px;
+$margin-large-abs: $margin-standard-abs * 2;
+$margin-large: $margin-standard * 2;
 $margin-half: 0.5rem;
 $margin-button: $margin-half;
 $margin-button-large: 1.5rem;
 $padding-standard: 0.75em;
+$padding-standard-abs: 10px;
+$padding-large: $margin-large;
 $padding-button: 0.5rem;
 $border-rounding-standard: 10px;
+$border-rounding-large: $border-rounding-standard * 2;
 
 //Relative sizes
 $rel-size-standard: 1rem;
