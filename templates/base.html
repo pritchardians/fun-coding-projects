@@ -33,7 +33,7 @@
     <div class="nav-links">
         <a href="{{url_for('index')}}">Home</a>
         <a href="{{url_for('choosy')}}">Choosy</a>
-        <a href="{{url_for('flexy')}}">Flexy</a>
+        <a href="{{url_for('stylish')}}">Stylish</a>
         <div class="range-container">
             <input type="range"  id="font-size-slider" min="8" max="32">
             <label for="font-size-slider" id="font-size-slider-label">16</label>
@@ -43,18 +43,6 @@
 </div>
 
 <h1 class="topofpage">{{page_title}}</h1>
-<!--<div class="button-bar">-->
-<!--    <button class="button-standard" id="font-size-small-button">-->
-<!--        Small Font-->
-<!--    </button>-->
-<!--    <button class="button-standard" id="font-size-medium-button">-->
-<!--        Medium Font-->
-<!--    </button>-->
-<!--    <button class="button-standard" id="font-size-large-button">-->
-<!--        Large Font-->
-<!--    </button>-->
-<!--</div>-->
-
 
 {% block content %} {% endblock %}
 <p></p>

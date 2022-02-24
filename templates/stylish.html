@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% block content %}
+<div class="wrapper">
+    <div class="tabs">
+        <div class="tab">
+            <input
+                    type="radio"
+                    name="css-tabs"
+                    id="tab-1"
+                    checked
+                    class="tab-switch"
+            />
+            <label for="tab-1" class="tab-label">CSS</label>
+            <div class="tab-content">
+                <h3>CSS tools to help you style your website!</h3>
+                <div class="center-me">
+                    <div class="button-bar">
+                        <form class="form" action="{{url_for('flexy')}}">
+                            <button class="button-standard">Flexy</button>
+                        </form>
+                        <form class="form">
+                            <button class="button-standard">Gradients</button>
+                        </form>
+                        <form class="form">
+                            <button class="button-standard">Shadow Box</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch"/>
+            <label for="tab-2" class="tab-label">Technical Details</label>
+            <div class="tab-content"></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+</div>

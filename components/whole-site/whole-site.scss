@@ -37,3 +37,8 @@ h1 {
   font-size: $font-size-xl;
   margin-top: 5px;
 }
+
+.center-me {
+  display: flex;
+  justify-content: center;
+}

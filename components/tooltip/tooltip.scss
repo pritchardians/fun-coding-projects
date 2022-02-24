@@ -1,0 +1,15 @@
+.tooltip.tooltiptext {
+  opacity: 0;
+  transition: opacity 5s;
+}
+
+.tooltip:hover.tooltiptext {
+  opacity: 100;
+}
+
+.tooltip.tooltiptext {
+  //width: 160px;
+  top: 100%;
+  left: 40%;
+  margin-left: 80px;
+}
