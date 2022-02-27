@@ -44,19 +44,12 @@
       <label for="tab-2" class="tab-label">Simple-Python</label>
       <div class="tab-content">
         <h1>Using Only Python</h1>
-        <p>A much less rich experience.</p>
-        <p>
-          We need Javascript coding to allow us to add, delete or change the
-          choices.
-        </p>
-
         <div class="content-box">
           <h3>Choice List</h3>
 
           <ul id="choice-list">
-            {% for item in choice_list %}
-            <li>{{item}}</li>
-            {% endfor %}
+            {% for item in choice_list %} {% include 'choice_button_python.html'
+            %} {% endfor %}
           </ul>
         </div>
         <form class="form" action="{{url_for('choice_made')}}">
