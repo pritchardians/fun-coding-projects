@@ -10,7 +10,30 @@
         checked
         class="tab-switch"
       />
-      <label for="tab-1" class="tab-label">Fully Functional</label>
+      <label for="tab-1" class="tab-label">Python</label>
+      <div class="tab-content">
+        <h1>Using Only Python</h1>
+        <div class="content-box">
+          <!--          <div class="content-box">-->
+          <h3>Choice List</h3>
+
+          <ul id="choice-list">
+            {% for item in choice_list %} {% include 'choice_button_python.html'
+            %} {% endfor %}
+          </ul>
+          <form action="{{ url_for('add_blank_choice') }}" method="POST">
+            <button class="button-standard" type="submit">+</button>
+          </form>
+        </div>
+        <form class="form" action="{{url_for('choice_made')}}">
+          <button class="button-standard">Make A Choice</button>
+        </form>
+      </div>
+      <!--      </div>-->
+    </div>
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-2" class="tab-switch" />
+      <label for="tab-2" class="tab-label">Javascript</label>
       <div class="tab-content">
         <div class="content-box">
           <h3>Choice List</h3>
@@ -36,28 +59,11 @@
         <div class="content-box">
           <h3 id="choice-made"></h3>
         </div>
-        <h1>Using Only Python</h1>
-        <div class="content-box">
-          <!--          <div class="content-box">-->
-          <h3>Choice List</h3>
-
-          <ul id="choice-list">
-            {% for item in choice_list %} {% include 'choice_button_python.html'
-            %} {% endfor %}
-          </ul>
-          <form action="{{ url_for('add_blank_choice') }}" method="POST">
-            <button class="button-standard" type="submit">+</button>
-          </form>
-        </div>
-        <form class="form" action="{{url_for('choice_made')}}">
-          <button class="button-standard">Make A Choice</button>
-        </form>
       </div>
-      <!--      </div>-->
     </div>
     <div class="tab">
-      <input type="radio" name="css-tabs" id="tab-2" class="tab-switch" />
-      <label for="tab-2" class="tab-label">Technical Details</label>
+      <input type="radio" name="css-tabs" id="tab-3" class="tab-switch" />
+      <label for="tab-3" class="tab-label">Technical Details</label>
       <div class="tab-content">
         <h1>Technical Details</h1>
       </div>
