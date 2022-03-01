@@ -26,7 +26,13 @@ def delete_item():
     chooser.delete_choice(choice_text)
     return redirect(url_for('choosy'))
 
-# ToDo: Put python-only choice in same tab as Javascript with an anchor for the url_for redirect
+
+@app.route('/add_blank_choice', methods=['POST'])
+def add_blank_choice():
+    chooser.add_choice('')
+    return redirect(url_for('choosy'))
+
+
 # ToDo: right now running a python delete also deletes the javascript choice too-they both depend on the same list!
 
 

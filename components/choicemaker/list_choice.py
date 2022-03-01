@@ -42,3 +42,7 @@ def delete_choice(choice):
     global main_list
     main_list.remove(choice)
 
+
+def add_choice(choice):
+    global main_list
+    main_list.append(choice)
