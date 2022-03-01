@@ -1,5 +1,5 @@
 # Import the packages you need to run the app!
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, request, url_for
 import random
 from components.choicemaker import list_choice as chooser
 
@@ -20,22 +20,31 @@ def choosy():
     return render_template('choosy.html', page_title='Choosy', choice_list=choice_list)
 
 
+@app.route('/delete_item', methods=['POST'])
+def delete_item():
+    choice_text = request.form['choice-text']
+    chooser.delete_choice(choice_text)
+    return redirect(url_for('choosy'))
+
+# ToDo: Put python-only choice in same tab as Javascript with an anchor for the url_for redirect
+# ToDo: right now running a python delete also deletes the javascript choice too-they both depend on the same list!
+
+
 # Choice has been made
 @app.route('/choice_made')
 def choice_made():
     choice = chooser.make_choice()
     return render_template('choice_made.html', page_title='Choosy - Choice Made', choice=choice)
 
+
 @app.route('/stylish')
 def stylish():
     return render_template('stylish.html', page_title='Stylish')
 
 
-
 @app.route('/flexy')
 def flexy():
     return render_template('flexy.html', page_title='Flexy')
-
 
 
 # Page Not Found page

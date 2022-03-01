@@ -1,6 +1,13 @@
 <li class="choice-bar" id="{{item}}">
-  <button class="button-standard" id="btn-delete-{{item}}">
-    <i class="fa fa-trash" aria-hidden="true"></i>
-  </button>
-  <input type="text" value="{{item}}" class="choice-text-python" />
+  <form action="{{ url_for('delete_item') }}" method="POST">
+    <button class="button-standard" id="btn-delete-{{item}}" type="submit">
+      <i class="fa fa-trash" aria-hidden="true"></i>
+    </button>
+    <input
+      type="text"
+      value="{{item}}"
+      class="choice-text-python"
+      name="choice-text"
+    />
+  </form>
 </li>

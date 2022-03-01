@@ -10,7 +10,7 @@ Function:
     get_list() -> default tuple
 '''
 
-main_list = ('Wilma', 'Fred', 'Betty', 'Barney', 'Pebbles', 'Bamm-Bamm')
+main_list = ['Wilma', 'Fred', 'Betty', 'Barney', 'Pebbles', 'Bamm-Bamm']
 
 
 def make_choice(choices=main_list):
@@ -36,3 +36,9 @@ def get_list():
     '''
     global main_list
     return main_list
+
+
+def delete_choice(choice):
+    global main_list
+    main_list.remove(choice)
+
