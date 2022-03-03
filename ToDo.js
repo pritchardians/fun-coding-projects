@@ -11,3 +11,5 @@
 // ToDo: choosy javascript-functional comments
 // ToDo: choosy javascript-comment code appropriately
 // ToDo: choosy javascript-make it part of the standard components instead of special reference in html
+
+// ToDo: Move font sizer within index page

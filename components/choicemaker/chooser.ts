@@ -10,7 +10,9 @@ for (let i = 0; i < deleteButtons.length; i++) {
 }
 
 // makeAChoiceButton.addEventListener("click", makeChoice);
-addChoiceButton.addEventListener("click", addChoice);
+addChoiceButton.addEventListener("click", function () {
+  addChoice();
+});
 
 let choiceList;
 if (choiceList == null) {
@@ -42,7 +44,7 @@ function deleteChoice() {
   this.parentElement.remove();
 }
 
-function addChoice(choice = ".") {
+function addChoice(choice = null) {
   let choiceList = document.getElementById("choice-list");
   let newChoice = document.createElement("li");
   newChoice.setAttribute("class", "choice-bar");
@@ -63,9 +65,9 @@ function addChoice(choice = ".") {
   let texty = document.createElement("input");
   texty.setAttribute("type", "text");
   texty.setAttribute("class", "choice-text");
-  // if (choice != "notARealChoice") {
-  texty.setAttribute("value", "yup");
-  // }
+  if (choice != null) {
+    texty.setAttribute("value", choice);
+  }
   newChoice.appendChild(texty);
 }
 

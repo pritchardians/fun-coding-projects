@@ -8,7 +8,9 @@ for (let i = 0; i < deleteButtons.length; i++) {
     deleteButtons[i].addEventListener("click", deleteChoice);
 }
 // makeAChoiceButton.addEventListener("click", makeChoice);
-addChoiceButton.addEventListener("click", addChoice);
+addChoiceButton.addEventListener("click", function () {
+    addChoice();
+});
 let choiceList;
 if (choiceList == null) {
     choiceList = initialList;
@@ -50,9 +52,7 @@ function addChoice(choice = null) {
     let texty = document.createElement("input");
     texty.setAttribute("type", "text");
     texty.setAttribute("class", "choice-text");
-    if (choice == null) {
-    }
-    else {
+    if (choice != null) {
         texty.setAttribute("value", choice);
     }
     newChoice.appendChild(texty);
