@@ -64,7 +64,7 @@ function addChoice(choice = ".") {
   texty.setAttribute("type", "text");
   texty.setAttribute("class", "choice-text");
   // if (choice != "notARealChoice") {
-  texty.setAttribute("value", choice);
+  texty.setAttribute("value", "yup");
   // }
   newChoice.appendChild(texty);
 }
