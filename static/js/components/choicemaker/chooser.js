@@ -1,5 +1,6 @@
 console.log("Chooser is loaded up");
-let choiceList = [];
+const initialList = ["cheddar", "gouda", "jarlsberg"];
+// let choiceList = sessionStorage.getItem("javascriptChoices");
 let deleteButtons = document.getElementsByClassName("button-delete-choice");
 const addChoiceButton = document.getElementById("add-choice");
 const choiceMadeText = document.getElementById("choice-made");
@@ -8,6 +9,13 @@ for (let i = 0; i < deleteButtons.length; i++) {
 }
 // makeAChoiceButton.addEventListener("click", makeChoice);
 addChoiceButton.addEventListener("click", addChoice);
+let choiceList;
+if (choiceList == null) {
+    choiceList = initialList;
+}
+choiceList.forEach((choice) => {
+    addChoice(choice);
+});
 function chooser() {
     console.log("let the choosing begin!");
 }
@@ -19,12 +27,14 @@ function updateChoiceList() {
         let recastTextBox = choiceListOnPage[i];
         choiceList.push(recastTextBox.value);
     }
+    const choiceListJSON = JSON.stringify(choiceList);
+    sessionStorage.setItem("javascriptChoices", choiceListJSON);
     return choiceList;
 }
 function deleteChoice() {
     this.parentElement.remove();
 }
-function addChoice() {
+function addChoice(choice = null) {
     let choiceList = document.getElementById("choice-list");
     let newChoice = document.createElement("li");
     newChoice.setAttribute("class", "choice-bar");
@@ -40,6 +50,11 @@ function addChoice() {
     let texty = document.createElement("input");
     texty.setAttribute("type", "text");
     texty.setAttribute("class", "choice-text");
+    if (choice == null) {
+    }
+    else {
+        texty.setAttribute("value", choice);
+    }
     newChoice.appendChild(texty);
 }
 function makeChoice() {
