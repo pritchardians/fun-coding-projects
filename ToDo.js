@@ -2,7 +2,11 @@
 // ToDo: choosy python-make textboxes non-editable and styled
 // ToDo: choosy python-switch 'add' to its own form and make it functional
 // ToDo: choosy python-add notes to page about limitations
-// ToDo: choosy-technical details
+// ToDo: choosy-technical details - cut down and make fun
+// ToDo: frnt page description - cut down and make fun
+
+// ToDo: Publish version 1.1 to public
+
 // ToDo: choosy python-type checking
 // ToDo: choosy python-function sphinx comments
 // ToDo: choosy python-comment code as appropriate
