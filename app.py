@@ -33,9 +33,6 @@ def add_blank_choice():
     return redirect(url_for('choosy'))
 
 
-# ToDo: right now running a python delete also deletes the javascript choice too-they both depend on the same list!
-
-
 # Choice has been made
 @app.route('/choice_made')
 def choice_made():

@@ -3,7 +3,7 @@
 // ToDo: choosy python-switch 'add' to its own form and make it functional
 // ToDo: choosy python-add notes to page about limitations
 // ToDo: choosy-technical details - cut down and make fun
-// ToDo: frnt page description - cut down and make fun
+// ToDo: front page description - cut down and make fun
 
 // ToDo: Publish version 1.1 to public
 
