@@ -14,21 +14,20 @@
       <div class="tab-content">
         <h2>Built in Python</h2>
         <div class="content-box">
-          <!--          <div class="content-box">-->
           <h3>Choice List</h3>
+          <form action="{{ url_for('add_choice') }}" method="POST">
+            <button class="button-standard" type="submit">+</button>
+            <input type="text" name="choice-text" class="choice-text" />
+          </form>
           <ul id="choice-list-python">
             {% for item in choice_list %} {% include 'choice_button_python.html'
             %} {% endfor %}
           </ul>
-          <form action="{{ url_for('add_blank_choice') }}" method="POST">
-            <button class="button-standard" type="submit">+</button>
-          </form>
         </div>
-        <form class="form" action="{{url_for('choice_made')}}">
+        <form class="form" action="{{ url_for('choice_made') }}">
           <button class="button-standard">Make A Choice</button>
         </form>
       </div>
-      <!--      </div>-->
     </div>
     <div class="tab">
       <input type="radio" name="css-tabs" id="tab-2" class="tab-switch" />

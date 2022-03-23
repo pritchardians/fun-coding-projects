@@ -27,9 +27,10 @@ def delete_item():
     return redirect(url_for('choosy'))
 
 
-@app.route('/add_blank_choice', methods=['POST'])
-def add_blank_choice():
-    chooser.add_choice('')
+@app.route('/add_choice', methods=['POST'])
+def add_choice():
+    choice_text = request.form['choice-text']
+    chooser.add_choice(choice_text)
     return redirect(url_for('choosy'))
 
 
