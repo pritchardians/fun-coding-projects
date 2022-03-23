@@ -364,6 +364,13 @@ h1 {
   font-size: 1em;
   background-image: linear-gradient(to bottom right, #9bdc55, #6666f1); }
 
+.choice-text-readonly {
+  padding: 0.5rem 1.5rem 0.25rem 0.25rem;
+  border-top: solid #f8f893 2px;
+  border-left: solid ivory 2px;
+  background-color: transparent;
+  color: #206a5d; }
+
 /* Styling for Flexy page */
 .inline-container,
 .flex-container {

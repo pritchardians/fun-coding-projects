@@ -16,10 +16,13 @@
         <div class="content-box">
           <h3>Choice List</h3>
           <form action="{{ url_for('add_choice') }}" method="POST">
-            <button class="button-standard" type="submit">+</button>
+            <button class="button-standard" type="submit">Add Choice</button>
             <input type="text" name="choice-text" class="choice-text" />
           </form>
           <ul id="choice-list-python">
+            NOTE: The choices below cannot be changed - only deleted
+            <br />
+            <br />
             {% for item in choice_list %} {% include 'choice_button_python.html'
             %} {% endfor %}
           </ul>
